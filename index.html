@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Page Counter</title>
+    <link rel="icon" href="https://fav.farm/🔥" />
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+
+<a href="https://akdavis83.github.io/Spiders/" style="color: inherit;"><div class="wrap" style="position: absolute; top: 200px; right: 100px;">
+    <div class="stepper vertical" data-start="000000000001">
+        <img src="img/arrow.svg" class="arrow top" alt="">
+        <div class="box">
+            <div class="numbers1 active">
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>0</span>
+                <span>1</span>
+            </div>
+            <div class="numbers2">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <img src="img/arrow.svg" class="arrow bottom" alt="">
+    </div></a>
+
+    <div class="stepper horizontal" data-start="101">
+        
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get the current counter value from localStorage or initialize it
+        let counter = parseInt(localStorage.getItem('pageCounter'), 10);
+        if (isNaN(counter)) {
+            counter = 0; // Initialize counter if not found
+        }
+        
+        // Increment the counter
+        counter++;
+        
+        // Store the updated counter value in localStorage
+        localStorage.setItem('pageCounter', counter);
+        
+        // Update the display
+        updateCounterDisplay(counter);
+    });
+    
+    function updateCounterDisplay(counter) {
+        
+        const stepper = document.querySelector('.stepper.vertical .numbers1');
+        
+        if (stepper) {
+            const digits = counter.toString().padStart(18, '0'); // Pad counter to ensure 12 digits
+            const spans = stepper.querySelectorAll('span');
+            
+            spans.forEach((span, index) => {
+                span.textContent = digits[index] || '0';
+            });
+        }
+    }
+    </script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+<script src=""></script>
+</body>
+</html>
