@@ -8,10 +8,10 @@ The stepper functionality has been disabled and the code has been forked to crea
 
 Animated numeric stepper component which can be used to increment or decrement a value by clicking arrows.
 
-:star: Star us on GitHub — it helps!
+
 
 ## [Live Demo](https://alikinvv.github.io/stepper/build)
 
 ![3d carousel](/src/img/gif.gif?raw=true)
 
-[![Analytics](https://ga-beacon.appspot.com/UA-31485994-5/stepper-repo)](https://github.com/alikinvv/stepper)
+
