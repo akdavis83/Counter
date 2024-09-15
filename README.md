@@ -4,7 +4,7 @@ The stepper functionality has been disabled and the code has been forked to crea
 
 # STEPPER
 
-[![GitHub Issues](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/alikinvv/stepper/issues)  [![HitCount](http://hits.dwyl.com/alikinvv/stepper.svg)](http://hits.dwyl.com/alikinvv/stepper)  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Issues](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/alikinvv/stepper/issues)  [![HitCount](http://hits.dwyl.com/alikinvv/stepper.svg)]([http://hits.dwyl.com/alikinvv/steppe](https://akdavis83.github.io/Counter/)r)  [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Animated numeric stepper component which can be used to increment or decrement a value by clicking arrows.
 
